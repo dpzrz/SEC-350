@@ -29,6 +29,9 @@ exit
 
 show network interfaces
 
+![{496FD017-29E1-4759-9A6C-E919E5334D81}](https://github.com/user-attachments/assets/76f23317-4c76-4d4b-9752-0983edbedbae)
+
+
 ```
 configure
 set system host-name
@@ -38,6 +41,13 @@ exit
 ```
 
 Web01:
+
+nmtui
+
+![{6B002826-2CBE-4302-A788-3637C1F4A1B4}](https://github.com/user-attachments/assets/01862bcf-24ca-46ab-82a4-cddc0514c674)
+
+
+
 
 Log01:
 
