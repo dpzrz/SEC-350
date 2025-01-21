@@ -61,3 +61,6 @@ network manager
 
 Log01:
 
+<img width="864" alt="image" src="https://github.com/user-attachments/assets/8a32a0d9-fb19-4606-ae7b-16e2a26b1a61" />
+
+
