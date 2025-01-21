@@ -47,6 +47,16 @@ nmtui
 ![{6B002826-2CBE-4302-A788-3637C1F4A1B4}](https://github.com/user-attachments/assets/01862bcf-24ca-46ab-82a4-cddc0514c674)
 
 
+firewalld https + http
+
+Routes gui
+
+http
+
+network manager
+
+
+
 
 
 Log01:
