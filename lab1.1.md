@@ -1,10 +1,41 @@
 ## Routing and DMZ 
+
 This page will serve as a complete setup of the boxes below and a detailed guide on how to recreate these setup steps. 
+
+![{38447B48-64E5-4AFA-A57E-6D9346681553}](https://github.com/user-attachments/assets/ff1cb289-3901-4e81-88f7-3a22c812d75c)
 ### Boxes + Configuration
 
 Rw01:
 
-Tools used:
+#### Creating a user and defining them as a sudo user
+
+```
+sudo adduser username
+# this command will prompt a user stup terminal process just type Y for all options
+
+sudo usermod -aG sudo username
+
+```
+#### Setting hostname through terminal
+`sudo hostnamectl set-hostname hostname`
+
+Road warrior can be set up graphically or through a config file. The route taken herre was using nmtui. Nmtui can be triggered in the terminal and provides the user with a GUI to configure their box. 
+
+#### Nmtui Process
+
+The nessecarry things to check in nmtui:
+
+***Edit a connection***
+- Add the IP address with the /** notation. Add gateway and DNS servers to `10.0.17.2`
+- Use the X to check off require IPv4 addressing
+- Make sure to set IPv4 config to manual amnd IPv6 to Disabled
+- 
+***Activate a connection***
+- Sometimes your connection cna be deactivated so make sure its activated
+Set system hostname
+- This will prompt a swystem hostname prompt you can change. Nessecary for our logs to be more organized.
+
+
 nmtui
 ip a
 network manager
