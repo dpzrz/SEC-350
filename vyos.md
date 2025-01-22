@@ -6,6 +6,10 @@
 
 
 
+![firewall-zonebased](https://github.com/user-attachments/assets/0dcadb23-800e-433f-9494-1a70c0fbd2b9)
+
+
+
 
 
 Refrences
