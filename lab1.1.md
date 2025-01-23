@@ -80,13 +80,6 @@ commit
 save
 ```
 
-commit
-
-save
-
-exit
-
-show network interfaces
 
 ![{496FD017-29E1-4759-9A6C-E919E5334D81}](https://github.com/user-attachments/assets/76f23317-4c76-4d4b-9752-0983edbedbae)
 
@@ -98,7 +91,7 @@ commit
 save
 exit
 ```
-Once thstd complete we need to organize our open ethernet ports. This is down by adding a description before assignment:
+Once thats complete we need to organize our open ethernet ports. This is down by adding a description before assignment:
 
 ```
 configure
