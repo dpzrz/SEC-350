@@ -110,6 +110,17 @@ commit
 save
 ```
 
+Now assigning our IP Addresses using the vyos configuration method:
+```
+set interfaces ethernet ethX IPADDRESS/MASK
+commit
+save
+exit
+```
+This process neeeds to be done to each of our ethernet ports; eth0, eth1, eth2
+
+Our WAN interface needs to now be routed to the internet. This process invlves setting both the deafult gateway and DNS server.
+
 ### Web01:
 
 nmtui
