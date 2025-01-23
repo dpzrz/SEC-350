@@ -3,9 +3,9 @@
 This page will serve as a complete setup of the boxes below and a detailed guide on how to recreate these setup steps. 
 
 ![{38447B48-64E5-4AFA-A57E-6D9346681553}](https://github.com/user-attachments/assets/ff1cb289-3901-4e81-88f7-3a22c812d75c)
-### Boxes + Configuration
+## Boxes + Configuration
 
-Rw01:
+### Rw01:
 
 #### Creating a user and defining them as a sudo user
 
@@ -47,7 +47,7 @@ snapshots
 
 ![{75E86678-DB3C-40D7-A5E8-6643E9FCA077}](https://github.com/user-attachments/assets/ea34ff23-42a3-4a56-83f0-1a3579d2764a)
 
-Fw01:
+### Fw01:
 
 vyos:
 
@@ -117,7 +117,7 @@ commit
 save
 ```
 
-Web01:
+### Web01:
 
 nmtui
 
@@ -136,7 +136,7 @@ network manager
 
 
 
-Log01:
+### Log01:
 
 <img width="864" alt="image" src="https://github.com/user-attachments/assets/8a32a0d9-fb19-4606-ae7b-16e2a26b1a61" />
 
