@@ -48,9 +48,37 @@ snapshots
 ![{75E86678-DB3C-40D7-A5E8-6643E9FCA077}](https://github.com/user-attachments/assets/ea34ff23-42a3-4a56-83f0-1a3579d2764a)
 
 Fw01:
+
 vyos:
 
+#### Configuring FW
+
+Configuring our fw differs as changes are made to the running configuration by entering `configure” mode`.  These changes are applied to the running configuration via `commit`.  The changes persist after reload only if you `save` them.  You leave configuration mode via the `exit` command. In practice this looks like:
+
+
+##### Hostname Config
+```
 configure
+set system host-name fw1-hostname
+commit
+save
+exit 
+```
+
+##### Interface Assignemnt
+
+First you have to delete any dhcp assignments on our fw:
+```
+show interfaces
+```
+![{05B9226F-6722-407C-B749-48298E2D071C}](https://github.com/user-attachments/assets/c7407f2c-0441-4fca-9baa-6b0ad1c96b50)
+
+```
+delete interfaces ethernet eth0 address dhcp
+delete interfaces ethernet eth1 address dhcp
+commit
+save
+```
 
 commit
 
@@ -69,6 +97,24 @@ set system host-name
 commit
 save
 exit
+```
+Once thstd complete we need to organize our open ethernet ports. This is down by adding a description before assignment:
+
+```
+configure
+set interface eth0 description SEC350-WAN
+commit
+save
+exit
+```
+Assigning our descriptions for DMZ and LAN are the same
+
+```
+configure
+set interface eth1 description HOSTNAME-DMZ
+set interface eth2 description HOSTNAME-LAN
+commit
+save
 ```
 
 Web01:
