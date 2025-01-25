@@ -10,9 +10,8 @@
 
 
 
-vyos:
+#### Configuring Vyos
 
-#### Configuring FW
 
 Configuring our fw differs as changes are made to the running configuration by entering `configure” mode`.  These changes are applied to the running configuration via `commit`.  The changes persist after reload only if you `save` them.  You leave configuration mode via the `exit` command. In practice this looks like:
 
