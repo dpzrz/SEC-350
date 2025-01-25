@@ -190,6 +190,8 @@ sudo firewall-cmd --zone=public -addport-514/udp --permanent
 
 Next we have to see if rsyslog is installed, this can be done using `sudo systemctl status rsysylog`. If it inst installed its ` sudo yum install rsyslog`
 
+<img width="864" alt="image" src="https://github.com/user-attachments/assets/8a32a0d9-fb19-4606-ae7b-16e2a26b1a61" />
+
 Modifictaion of the rsyslog config is needed so we have to acess the file at `/etc/rsyslog.conf`
 
 Were uncommenting the udp and tcp modules for syslog reception
@@ -198,10 +200,5 @@ Confirming syslog can now use these ports using `netstat -tupan : grep 514`, you
 
 
 
-
-
-
-
-<img width="864" alt="image" src="https://github.com/user-attachments/assets/8a32a0d9-fb19-4606-ae7b-16e2a26b1a61" />
 
 
