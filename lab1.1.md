@@ -198,6 +198,27 @@ Were uncommenting the udp and tcp modules for syslog reception
 
 Confirming syslog can now use these ports using `netstat -tupan : grep 514`, you should see tcp/tcp6 and udp/udp6 lisening on port 514.
 
+This next step requires syslog to be installed on web01 with a config file located at `/etc/rsyslog.d/sec350.conf`, this config will read:
+```
+user.notice@172.16.50.5 
+```
+Thats the IP fro our rsyslog server
+
+First we have use a command that allows us to see the broadcast. This command will display the last 10 lines of the /var/log/messages file and continuously update as new entries are added
+```
+ tail -f the /var/log/messages file
+```
+This will allow us to see the message being sent
+
+To test the rsyslog messengaing we can start a logger session from web01, the command for this is:
+`logger -t test INSERTTEXTHERE`
+<img width="749" alt="image" src="https://github.com/user-attachments/assets/47d218a8-81a3-40df-94bd-eb93ddb0fe80" />
+
+
+
+
+
+
 
 
 
