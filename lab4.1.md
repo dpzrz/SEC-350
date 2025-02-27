@@ -25,6 +25,7 @@ set firewall name WAN-to-DMZ rule 10 destination port '80'
 
 RULE 1
 ```
-
+set firewall name DMZ-to-WAN rule 1 action accept
+set firewall name DMZ-to-WAN rule 1 state established enable
 
 ```
