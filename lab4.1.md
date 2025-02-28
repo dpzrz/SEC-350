@@ -29,3 +29,10 @@ set firewall name DMZ-to-WAN rule 1 action accept
 set firewall name DMZ-to-WAN rule 1 state established enable
 
 ```
+
+
+```
+
+set zone-policy zone WAN from DMZ firewall name DMZ-to-WAN 
+set zone-policy zone DMZ from WAN firewall name WAN-to-DMZ
+```
